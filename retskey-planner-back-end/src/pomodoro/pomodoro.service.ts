@@ -37,7 +37,7 @@ export class PomodoroService {
         id: userId,
       },
       select: {
-        intevalsCount: true,
+        intervalsCount: true,
       },
     });
 
@@ -47,7 +47,7 @@ export class PomodoroService {
       data: {
         rounds: {
           createMany: {
-            data: Array.from({ length: user.intevalsCount }, () => ({
+            data: Array.from({ length: user.intervalsCount }, () => ({
               totalSeconds: 0,
             })),
           },
