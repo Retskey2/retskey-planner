@@ -75,7 +75,7 @@ export class PomodoroService {
         id: pomodoroId,
       },
       data: {
-        isCompeted: dto.isCompleted,
+        isCompleted: dto.isCompleted,
       },
     });
   }
